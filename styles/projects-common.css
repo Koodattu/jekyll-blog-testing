@@ -1,0 +1,96 @@
+.project-container {
+  background-color: #1f2b42;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.project-content {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease-in-out;
+  height: 100%;
+}
+
+.view-project-details {
+  color: white;
+  font-family: Arial;
+  transition: color 0.3s ease-in-out;
+}
+
+.view-project-details img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.project-information {
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  background-image: linear-gradient(to right, #202836 33%, #202836bd 66%, rgba(0, 0, 0, 0));
+  transition: background-image 0.25s ease-in-out;
+  height: 100%;
+}
+
+.project-preview-image {
+  position: absolute;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(4px) opacity(0.75);
+}
+
+.project-features {
+  margin: 0.25em 0 1.5em 0;
+}
+
+.project-features li {
+  color: white;
+  font-family: "Arial";
+  margin: 0.25em 0 0 1.5em;
+}
+
+.project-container .project-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 800px) {
+  div button.tech-tag:hover {
+    filter: brightness(200%) saturate(200%);
+    cursor: pointer;
+  }
+
+  .project-container:hover .project-content .project-information {
+    background-image: linear-gradient(to right, #232c3b 33%, #252e3fbd 66%, rgba(255, 255, 255, 0.1));
+  }
+
+  .project-container:hover .project-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .project-container:hover .view-project-details {
+    color: teal;
+  }
+
+  .project-container:hover .view-project-details img {
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+    transform: rotate(-45deg);
+  }
+
+  .project-container.hovered .project-content .project-information {
+    background-image: linear-gradient(to right, #232c3b 33%, #252e3fbd 66%, rgba(255, 255, 255, 0.1));
+  }
+
+  .project-container.hovered .project-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .project-container.hovered .view-project-details {
+    color: teal;
+  }
+
+  .project-container.hovered .view-project-details img {
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects - Ala-Ranta.la Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/styles/tech-tags.css" />
+    <link rel="stylesheet" href="/styles/main-common.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/projects-common.css" />
+    <link rel="stylesheet" href="/styles/projects.css" />
+  </head>
+  <body>
+    <div class="header-main-wrapper">
+      <div class="flex-column-center">
+        <header class="top-header">
+          <a class="name-link link-underline-animation link-underline-animation-rgb" href="/">
+            <h1 class="h1-name">_Ranta.la</h1>
+          </a>
+          <nav class="nav-top">
+            <a
+              class="link-underline-animation link-underline-animation-red nav-link"
+              href="/assets/Juha_Ala-Rantala_CV_FI.pdf"
+              >CV_FI</a
+            >
+            <a
+              class="link-underline-animation link-underline-animation-orange nav-link"
+              href="/assets/Juha_Ala-Rantala_CV_EN.pdf"
+              >CV_EN</a
+            >
+            <a class="link-underline-animation link-underline-animation-green nav-link" href="/about">About</a>
+            <a class="link-underline-animation link-underline-animation-cyan nav-link" href="/projects">Projects</a>
+            <a class="link-underline-animation link-underline-animation-blue nav-link" href="/blog">Blog</a>
+          </nav>
+        </header>
+        <main>
+          <div class="top-content">
+            <div class="content-title">
+              <h2>🚀 All my projects</h2>
+              <button class="collapsible">Click to reveal projects statistics</button>
+            </div>
+            <div id="project-charts-collapsed" class="collapsible-content">
+              <div class="project-charts">
+                <div id="platform-chart-div" class="flex-column-center">
+                  <h4>Platforms</h4>
+                  <div id="platform-chart" class="chart"></div>
+                </div>
+                <div id="languages-chart-div" class="flex-column-center">
+                  <h4>Languages</h4>
+                  <div id="languages-chart" class="chart"></div>
+                </div>
+                <div id="frontend-chart-div" class="flex-column-center">
+                  <h4>Frontend</h4>
+                  <div id="frontend-chart" class="chart"></div>
+                </div>
+                <div id="backend-chart-div" class="flex-column-center">
+                  <h4>Backend</h4>
+                  <div id="backend-chart" class="chart"></div>
+                </div>
+                <div id="tools-chart-div" class="flex-column-center">
+                  <h4>Tools</h4>
+                  <div id="tools-chart" class="chart"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-filters">
+              <div class="title-button">
+                <h3>Filter projects by tags</h3>
+                <button id="select-none-filter" class="project-filter-all tech-tag small-margin-left">
+                  Reset filters
+                </button>
+              </div>
+              <div class="categories-filters">
+                <div>Platforms:</div>
+                <div class="project-filters-platform"></div>
+                <div>Languages:</div>
+                <div class="project-filters-language"></div>
+                <div>Frontend:</div>
+                <div class="project-filters-frontend"></div>
+                <div>Backend:</div>
+                <div class="project-filters-backend"></div>
+                <div>Tools:</div>
+                <div class="project-filters-tools"></div>
+              </div>
+              <div id="visible-projects">Currently showing all projects</div>
+            </div>
+          </div>
+          <div id="filtered-projects" class="filtered-projects"></div>
+        </main>
+      </div>
+      <footer>
+        <span class="flex-center">
+          Made with ☕️ and 🍪. All trademarks, logos and brand names are the property of their respective owners. View
+          source code on
+          <a class="contact-link" href="https://github.com/Koodattu/ala-ranta.la" target="_blank"
+            ><img class="contact-image" src="/assets/github.webp"
+          /></a>
+        </span>
+      </footer>
+    </div>
+    <template id="project-template">
+      <a target="_blank" class="project-container hoverable">
+        <div class="project-content">
+          <img id="project-image" class="project-preview-image" />
+          <div class="project-information">
+            <h3 id="project-title"></h3>
+            <p id="project-year" style="color: gray"></p>
+            <p id="project-description" style="font-weight: bold"></p>
+            <p id="project-tags"></p>
+            <p>Features:</p>
+            <ul id="project-features" class="project-features"></ul>
+            <div class="view-info view-project-details">
+              <div>View more info and details</div>
+              <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+            </div>
+            <template id="tag-template">
+              <span class="tech-tag"></span>
+            </template>
+          </div>
+        </div>
+      </a>
+    </template>
+    <template id="filter-tag-template">
+      <button class="project-filter tech-tag filter-disabled"></button>
+    </template>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="scripts/chart-script.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/project-filters.js"></script>
+  </body>
+</html>

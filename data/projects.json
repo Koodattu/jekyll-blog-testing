@@ -1,0 +1,149 @@
+{
+  "projects": [
+    {
+      "title": "Personal Website",
+      "description": "Personal website with CV and information about myself and my projects",
+      "tech": {
+        "platform": ["Web"],
+        "languages": ["JavaScript"],
+        "frontend": ["HTML", "CSS"],
+        "backend": ["Github Pages"],
+        "tools": ["Visual Studio Code"]
+      },
+      "features": ["Information about self", "Projects", "CV"],
+      "link": "https://github.com/Koodattu/ala-ranta.la",
+      "year": 2024
+    },
+    {
+      "title": "Twitch Song Request Desktop",
+      "description": "A Windows desktop Twitch song request application with multi-platform support for song requests",
+      "tech": {
+        "platform": ["Desktop"],
+        "languages": ["C#"],
+        "frontend": ["WPF", ".NET"],
+        "tools": ["Visual Studio"]
+      },
+      "features": [
+        "Song requests are read from Twitch channel points redeem rewards",
+        "Supports song requests from Spotify and Youtube",
+        "Spotify songs are played via local Spotify installation",
+        "Youtube videos are played inside application"
+      ],
+      "link": "https://github.com/Koodattu/twitch-song-request-desktop",
+      "year": 2023
+    },
+    {
+      "title": "Twitch Spotify Song Request",
+      "description": "A simple javascript and python script for Twitch Spotify song requests",
+      "tech": {
+        "platform": ["Web"],
+        "languages": ["Python", "JavaScript"],
+        "frontend": ["HTML", "CSS"],
+        "tools": ["Visual Studio Code"]
+      },
+      "features": [
+        "Python script for generating Twitch and Spotify access tokens",
+        "HTML page with only Javascript which can be added to OBS as a browser source",
+        "No hosting required after initial setup"
+      ],
+      "link": "https://github.com/Koodattu/twitch-spotify-song-request",
+      "year": 2023
+    },
+    {
+      "title": "Staff Restaurant Lunch Menu App",
+      "description": "A lunch menu mobile application with frontend and backend for previous employer staff restaurant",
+      "tech": {
+        "platform": ["Mobile", "Server"],
+        "languages": ["Dart", "Java"],
+        "frontend": ["Flutter"],
+        "backend": ["Spring Boot", "PostgreSQL"],
+        "tools": ["IntelliJ IDEA", "Visual Studio Code"]
+      },
+      "features": [
+        "Mobile frontend with Flutter and Dart, backend with Java Spring Boot",
+        "Backend Fetches lunch menu weekly, saves to database, frontend requests menu with Rest Api",
+        "Extra features like view menu history, vote on courses, stats about courses"
+      ],
+      "link": "https://github.com/Koodattu/lunch-menu-app",
+      "year": 2021
+    },
+    {
+      "title": "Räccis SeAMK Food Royale",
+      "description": "An Android lunch menu mobile application for a friend",
+      "tech": {
+        "platform": ["Mobile"],
+        "languages": ["Java"],
+        "frontend": ["Android"],
+        "tools": ["Android Studio"]
+      },
+      "features": [
+        "Displays two restaurants daily lunch menu side by side",
+        "Fetches Sodexo lunch menu with rest api in Json",
+        "Scrapes Eventti lunch menu from website html"
+      ],
+      "link": "https://github.com/Koodattu/jere-food-royale-android",
+      "year": 2018
+    },
+    {
+      "title": "Tsumppi Coffee Shop",
+      "description": "An Android catalogue application for SeAMK student services coffee shop",
+      "tech": {
+        "platform": ["Mobile"],
+        "languages": ["Java"],
+        "frontend": ["Android"],
+        "backend": ["Google Sheets"],
+        "tools": ["Android Studio"]
+      },
+      "features": [
+        "Coffee shop products catalogue and latest social media posts",
+        "Catalogue data is fetched from google sheets",
+        "Latest social media posts are fetched from Facebook and Instagram"
+      ],
+      "link": "https://github.com/Koodattu/tsumppi-coffee-shop",
+      "year": 2017
+    },
+    {
+      "title": "SeAMK Lukkari",
+      "description": "An Android timetable mobile application for SeAMK students",
+      "tech": {
+        "platform": ["Mobile"],
+        "languages": ["Java"],
+        "frontend": ["Android"],
+        "tools": ["Android Studio"]
+      },
+      "features": [
+        "Displays a student group's daily, weekly and period timetable",
+        "Create your own timetable, view other student group's timetables, search for an empty room",
+        "See weekly lunch menus from student restaurants"
+      ],
+      "link": "https://github.com/Koodattu/SeAMK-Lukkari",
+      "year": 2017
+    },
+    {
+      "title": "SeAMK WinhaWille",
+      "description": "An Android study registry mobile application for SeAMK students",
+      "tech": {
+        "platform": ["Mobile"],
+        "languages": ["Java"],
+        "frontend": ["Android"],
+        "tools": ["Android Studio"]
+      },
+      "features": ["See your GPA and student credits", "See all your completed courses and grades"],
+      "link": "https://github.com/Koodattu/seamk-winhawille",
+      "year": 2016
+    },
+    {
+      "title": "SeAMK Ruoka",
+      "description": "An Android lunch menu mobile application for SeAMK students",
+      "tech": {
+        "platform": ["Mobile"],
+        "languages": ["Java"],
+        "frontend": ["Android"],
+        "tools": ["Android Studio"]
+      },
+      "features": ["See weekly lunch menus from student restaurants"],
+      "link": "https://github.com/Koodattu/seamk-ruoka",
+      "year": 2016
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+.name-link {
+  color: rgb(201, 201, 201);
+  margin-right: 0.75rem;
+  font-family: "Arial";
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.25rem;
+}
+
+.nav-link {
+  margin-left: 1rem;
+}
+
+.link-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(201, 201, 201);
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Arial";
+  text-decoration: none;
+}
+
+.top-header {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  width: 75vw;
+  max-width: 900px;
+}
+
+.h1-name {
+  font-family: "Arial";
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .link-underline-animation:hover {
+    color: white;
+  }
+
+  .link-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: teal;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .link-underline-animation-teal:after {
+    background-color: teal;
+  }
+
+  .link-underline-animation-orange:after {
+    background-color: orange;
+  }
+
+  .link-underline-animation-cyan:after {
+    background-color: cyan;
+  }
+
+  .link-underline-animation-red:after {
+    background-color: rgb(255, 65, 65);
+  }
+
+  .link-underline-animation-green:after {
+    background-color: rgb(93, 255, 43);
+  }
+
+  .link-underline-animation-blue:after {
+    background-color: rgb(18, 81, 255);
+  }
+
+  .link-underline-animation-rgb:after {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(30, 250, 0, 1) 49%, rgba(4, 0, 255, 1) 100%);
+  }
+
+  .name-link:hover {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .top-header {
+    width: 95vw;
+  }
+
+  .top-header {
+    align-items: start;
+  }
+
+  .h1-name {
+    font-family: "Arial";
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  .name-link {
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 1.75rem;
+  }
+
+  .nav-top {
+    margin-bottom: 0.1em;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}

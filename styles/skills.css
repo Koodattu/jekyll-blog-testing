@@ -1,0 +1,351 @@
+.skill-image {
+  height: 48px;
+  width: 48px;
+  transition: opacity 0.25s ease-in-out, filter 0.25s ease-in-out;
+}
+
+.skill-image-container {
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
+
+.skill-image-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: "Arial";
+  font-size: medium;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.skill-display-select {
+  display: flex;
+  justify-content: center;
+}
+
+.change-skill-display {
+  padding: 0.75em 1.5em;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-family: "Arial";
+  display: flex;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  background-color: #8baaff15;
+}
+
+.change-skill-display:active {
+  background-color: #1c2436;
+}
+
+.change-skill-display-enabled {
+  background-color: #2d4269;
+}
+
+.change-skill-display:active {
+  background-color: #263049;
+}
+
+.skills-locker-category {
+  display: grid;
+  grid-template-areas:
+    "languages-tag . frontend-tag . backend-tag . tools-tag"
+    "csharp-tag . dotnet-tag . spring-tag . vs-tag"
+    "java-tag . flutter-tag . sql-tag . photoshop-tag"
+    "python-tag . android-tag . sql-server-tag . svn-tag"
+    "javascript-tag . css-tag . postgresql-tag . git-tag"
+    "dart-tag . html-tag . nodejs-tag . jira-tag"
+    "cpp-tag . react-tag . mongodb-tag . unity-tag";
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.skills-locker-matrix {
+  display: grid;
+  grid-template-areas:
+    ". novice-tag novice-tag intermediate-tag intermediate-tag intermediate-tag proficient-tag advanced-tag expert-tag"
+    "languages-tag cpp-tag . dart-tag javascript-tag . python-tag java-tag csharp-tag"
+    "frontend-tag react-tag . html-tag css-tag android-tag flutter-tag . dotnet-tag"
+    "backend-tag mongodb-tag nodejs-tag postgresql-tag sql-server-tag sql-tag spring-tag . ."
+    "tools-tag unity-tag . jira-tag git-tag svn-tag . photoshop-tag vs-tag";
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.skills-locker-tier-list {
+  display: grid;
+  grid-template-areas:
+    "expert-tag csharp-tag dotnet-tag vs-tag . . ."
+    "advanced-tag java-tag photoshop-tag . . . ."
+    "proficient-tag python-tag flutter-tag spring-tag . . ."
+    "intermediate-tag javascript-tag dart-tag android-tag css-tag html-tag sql-tag"
+    "intermediate-tag sql-server-tag postgresql-tag jira-tag git-tag svn-tag ."
+    "novice-tag cpp-tag react-tag nodejs-tag mongodb-tag unity-tag .";
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#html-tag {
+  grid-area: html-tag;
+}
+
+#css-tag {
+  grid-area: css-tag;
+}
+
+#sql-tag {
+  grid-area: sql-tag;
+}
+
+#sql-server-tag {
+  grid-area: sql-server-tag;
+}
+
+#cpp-tag {
+  grid-area: cpp-tag;
+}
+
+#dart-tag {
+  grid-area: dart-tag;
+}
+
+#javascript-tag {
+  grid-area: javascript-tag;
+}
+
+#python-tag {
+  grid-area: python-tag;
+}
+
+#java-tag {
+  grid-area: java-tag;
+}
+
+#csharp-tag {
+  grid-area: csharp-tag;
+}
+
+#react-tag {
+  grid-area: react-tag;
+}
+
+#android-tag {
+  grid-area: android-tag;
+}
+
+#flutter-tag {
+  grid-area: flutter-tag;
+}
+
+#dotnet-tag {
+  grid-area: dotnet-tag;
+}
+
+#mongodb-tag {
+  grid-area: mongodb-tag;
+}
+
+#nodejs-tag {
+  grid-area: nodejs-tag;
+}
+
+#postgresql-tag {
+  grid-area: postgresql-tag;
+}
+
+#spring-tag {
+  grid-area: spring-tag;
+}
+
+#unity-tag {
+  grid-area: unity-tag;
+}
+
+#jira-tag {
+  grid-area: jira-tag;
+}
+
+#git-tag {
+  grid-area: git-tag;
+}
+
+#svn-tag {
+  grid-area: svn-tag;
+}
+
+#photoshop-tag {
+  grid-area: photoshop-tag;
+}
+
+#vs-tag {
+  grid-area: vs-tag;
+}
+
+#languages-tag {
+  grid-area: languages-tag;
+}
+
+.skills-locker-tier-list #languages-tag {
+  display: none;
+}
+
+#frontend-tag {
+  grid-area: frontend-tag;
+}
+
+.skills-locker-tier-list #frontend-tag {
+  display: none;
+}
+
+#backend-tag {
+  grid-area: backend-tag;
+}
+
+.skills-locker-tier-list #backend-tag {
+  display: none;
+}
+
+#tools-tag {
+  grid-area: tools-tag;
+}
+
+.skills-locker-tier-list #tools-tag {
+  display: none;
+}
+
+#novice-tag {
+  grid-area: novice-tag;
+}
+
+.skills-locker-category #novice-tag {
+  display: none;
+}
+
+#intermediate-tag {
+  grid-area: intermediate-tag;
+}
+
+.skills-locker-category #intermediate-tag {
+  display: none;
+}
+
+#proficient-tag {
+  grid-area: proficient-tag;
+}
+
+.skills-locker-category #proficient-tag {
+  display: none;
+}
+
+#advanced-tag {
+  grid-area: advanced-tag;
+}
+
+.skills-locker-category #advanced-tag {
+  display: none;
+}
+
+#expert-tag {
+  grid-area: expert-tag;
+}
+
+.skills-locker-category #expert-tag {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .skill-image-container:hover .skill-image {
+    filter: none;
+    cursor: pointer;
+    opacity: 0;
+    filter: grayscale(100%);
+  }
+
+  .skill-image-container:hover .skill-image-text {
+    filter: none;
+    cursor: pointer;
+    opacity: 1;
+    filter: contrast(200%);
+  }
+
+  .change-skill-display:hover {
+    background-color: #466eb8;
+    cursor: pointer;
+  }
+
+  .change-skill-display-enabled:hover {
+    background-color: #466eb8;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-locker {
+    grid-gap: 2rem 0.1rem;
+    padding: 0;
+  }
+
+  .skill-image {
+    height: 36px;
+    width: 36px;
+  }
+
+  .skill-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    height: 75px;
+  }
+
+  .skill-image-text {
+    position: static;
+    font-size: small;
+    opacity: 1;
+    transform: none;
+    border: none;
+    margin: 4px 2px;
+    padding: 4px 8px;
+  }
+
+  .change-skill-display {
+    padding: 0.75em;
+    font-size: medium;
+  }
+
+  .skills-locker-category {
+    grid-gap: 0.05rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .skills-locker-matrix {
+    grid-gap: 0.05rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .skills-locker-tier-list {
+    grid-gap: 0.05rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "expert-tag csharp-tag dotnet-tag vs-tag"
+      "advanced-tag java-tag photoshop-tag ."
+      "proficient-tag python-tag flutter-tag spring-tag"
+      "intermediate-tag javascript-tag dart-tag android-tag"
+      "intermediate-tag css-tag html-tag sql-tag"
+      "intermediate-tag sql-server-tag postgresql-tag jira-tag "
+      "intermediate-tag git-tag svn-tag ."
+      "novice-tag cpp-tag react-tag nodejs-tag"
+      "novice-tag mongodb-tag unity-tag .";
+  }
+}

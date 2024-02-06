@@ -1,0 +1,228 @@
+.box {
+  overflow: hidden;
+  font-family: "Arial";
+  padding: 1em;
+}
+
+.box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+}
+
+.box ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px dashed #fff;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.box ul li {
+  margin: 20px 0px 60px 40px;
+  position: relative;
+  padding: 30px 0px;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.box ul li .hover-background {
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: -50px;
+  width: calc(100% + 65px);
+  height: calc(100% + 60px);
+  background-color: transparent;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.box ul li div .small-org-img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.relevant-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.relevant-tags a {
+  text-decoration: none;
+}
+
+.relevant-tags a:hover {
+  filter: brightness(200%) saturate(200%);
+}
+
+.relevant-links {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.relevant-links a {
+  font-size: smaller;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 2px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.233);
+  color: rgb(218, 218, 218);
+  padding: 4px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.link-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(75%) contrast(100%);
+}
+
+.relevant-links a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+
+.relevant-links a:hover .link-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.box ul li div div .view-info {
+  transition: color 0.3s ease-in-out;
+}
+
+.box ul li:last-child {
+  margin: 20px 0px 20px 40px;
+}
+
+.box ul li > span {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.box ul li > span:before,
+.box ul li > span:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: teal;
+  border: 2px solid #fff;
+  position: absolute;
+  left: -7px;
+}
+.box ul li > span:before {
+  top: -10px;
+}
+
+.box ul li > span:after {
+  top: 100%;
+}
+
+.box .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.box .name {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.box .length {
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.box .info {
+  margin-bottom: 1em;
+}
+
+.box .view-info {
+  font-size: 90%;
+}
+
+.box .time span {
+  position: absolute;
+  left: -15px;
+  color: #ffffff;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.box .time span:first-child {
+  top: -12px;
+}
+
+.box .time span:last-child {
+  top: 99.5%;
+}
+
+.exp-info-logo {
+  justify-content: space-between;
+  display: flex;
+}
+
+@media only screen and (min-width: 800px) {
+  .box ul li:hover .hover-background {
+    background-color: #8baaff15;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .box ul li:hover div .small-org-img {
+    transform: scale(1.2);
+    filter: none;
+  }
+
+  .box ul li:hover div div .view-info {
+    color: teal;
+  }
+
+  .box ul li:hover .arrow-out {
+    transform: rotate(-45deg);
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .box ul li.hovered .hover-background {
+    background-color: #8baaff15;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .box ul li.hovered div .small-org-img {
+    transform: scale(1.2);
+    filter: none;
+  }
+
+  .box ul li.hovered .view-info {
+    color: teal;
+  }
+
+  .box ul li.hovered .arrow-out {
+    transform: rotate(-45deg);
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+  }
+}

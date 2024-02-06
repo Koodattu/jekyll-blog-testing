@@ -1,0 +1,129 @@
+.page-container {
+  width: 75vw;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-links {
+  display: flex;
+  margin-top: 1em;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  margin-top: 4em;
+}
+
+.info-content {
+  padding: 1em;
+}
+
+.filtered-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+.profile-picture {
+  float: right;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  shape-outside: circle();
+}
+
+.tuni-org-img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1) saturate(0);
+}
+
+.view-all-projects {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-family: "Arial";
+  font-weight: bold;
+  border: 2px solid;
+  padding: 0.5em;
+  border-radius: 10px;
+  border-color: #ffffff00;
+  transition: filter 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+}
+
+.view-all-projects img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 800px) {
+  .link-fill-animation:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    transform: scaleX(0);
+    height: 20px;
+    bottom: 0px;
+    left: -2px;
+    background-color: teal;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    z-index: -1;
+  }
+
+  .link-fill-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .view-all-projects:hover {
+    background-color: #8baaff15;
+    cursor: pointer;
+    border-color: teal;
+    color: teal;
+  }
+
+  .view-all-projects:hover img {
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+    transform: rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .page-container {
+    width: 95vw;
+  }
+
+  .main-content {
+    margin-top: 1em;
+  }
+
+  .profile-picture {
+    width: 125px;
+    height: 125px;
+  }
+
+  .view-all-projects {
+    font-size: small;
+  }
+
+  .view-all-projects.hovered {
+    background-color: #8baaff15;
+    cursor: pointer;
+    border-color: teal;
+    color: teal;
+  }
+
+  .view-all-projects.hovered img {
+    filter: invert(32%) sepia(71%) saturate(891%) hue-rotate(140deg) brightness(98%) contrast(102%);
+    transform: rotate(-45deg);
+  }
+}

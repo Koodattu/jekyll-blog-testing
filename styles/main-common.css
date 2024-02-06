@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d2431;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
+  font-family: "Arial";
+}
+
+.h2-info {
+  font-family: "Arial";
+  align-self: self-start;
+  margin: 0;
+}
+
+h3 {
+  color: white;
+  font-size: x-large;
+  font-family: "Arial";
+}
+
+h4 {
+  color: white;
+  font-family: "Arial";
+}
+
+p {
+  color: white;
+  font-size: medium;
+  font-family: "Arial";
+  margin-top: 0.5em;
+}
+
+.header-main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-fill-animation {
+  display: inline-block;
+  position: relative;
+  color: teal;
+  font-weight: bold;
+  font-size: normal;
+  font-family: "Arial";
+  text-decoration: none;
+}
+
+.small-org-img {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1) saturate(0);
+}
+
+.view-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrow-out {
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1) saturate(0);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.small-padding {
+  padding: 1em;
+}
+
+.small-margin-left {
+  margin-left: 0.5rem;
+}
+
+.bottom-margin {
+  margin: 0 0 0.5em 0;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-link {
+  margin-right: 1em;
+}
+
+.contact-image {
+  object-fit: cover;
+  width: 36px;
+  filter: brightness(0) invert(1) saturate(0);
+  padding: 0.5em;
+  border-radius: 10px;
+  transition: filter 0.25s ease-in-out, background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact-image:hover {
+    filter: none;
+    background-color: #8baaff15;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .small-padding {
+    padding: 0.5em;
+  }
+
+  .bottom-margin {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  h2 {
+    color: white;
+    font-size: x-large;
+    font-family: "Arial";
+  }
+
+  .h2-info {
+    font-size: x-large;
+  }
+}

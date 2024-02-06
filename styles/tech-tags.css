@@ -1,0 +1,344 @@
+.tech-tag {
+  border: none;
+  border-radius: 20px;
+  margin: 4px 2px;
+  padding: 4px 10px;
+  display: inline-block;
+  z-index: 3;
+}
+
+.h4-tech-tag {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-family: "Arial";
+  font-weight: bold;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  border: 2px solid;
+  padding: 0.5em;
+  border-radius: 10px;
+  display: inline-block;
+  border-color: #ffffff00;
+  transition: filter 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+}
+
+.desktop-tag {
+  border-color: #cc97f9;
+  color: #cc97f9;
+  background-color: rgba(204, 151, 249, 0.2);
+}
+
+.csharp-tag {
+  border-color: #a179dc;
+  color: #a179dc;
+  background-color: rgba(161, 121, 220, 0.2);
+}
+
+.cpp-tag {
+  border-color: #659ad2;
+  color: #659ad2;
+  background-color: rgba(101, 154, 210, 0.2);
+}
+
+.net-tag {
+  border-color: #512bd4;
+  color: #512bd4;
+  background-color: rgba(81, 43, 212, 0.2);
+}
+
+.net-framework-tag {
+  border-color: #039dde;
+  color: #039dde;
+  background-color: rgba(3, 157, 222, 0.2);
+}
+
+.win-services-tag {
+  border-color: #c6feff;
+  color: #c6feff;
+  background-color: rgba(198, 254, 255, 0.2);
+}
+
+.mobile-tag {
+  border-color: #5fc9f9;
+  color: #5fc9f9;
+  background-color: rgba(95, 201, 249, 0.2);
+}
+
+.flutter-tag {
+  border-color: #31b9f6;
+  color: #31b9f6;
+  background-color: rgba(49, 185, 246, 0.2);
+}
+
+.dart-tag {
+  border-color: #00d2b8;
+  color: #00d2b8;
+  background-color: rgba(0, 210, 184, 0.2);
+}
+
+.android-tag {
+  border-color: #85c808;
+  color: #85c808;
+  background-color: rgba(133, 200, 8, 0.2);
+}
+
+.web-tag {
+  border-color: #f26529;
+  color: #f26529;
+  background-color: rgba(242, 101, 41, 0.2);
+}
+
+.html-tag {
+  border-color: #e44d25;
+  color: #e44d25;
+  background-color: rgba(228, 77, 37, 0.2);
+}
+
+.css-tag {
+  border-color: #2965f1;
+  color: #2965f1;
+  background-color: rgba(41, 101, 241, 0.2);
+}
+
+.javascript-tag {
+  border-color: #f0db4f;
+  color: #f0db4f;
+  background-color: rgba(240, 219, 79, 0.2);
+}
+
+.typescript-tag {
+  border-color: #0079ca;
+  color: #0079ca;
+  background-color: rgba(0, 121, 202, 0.2);
+}
+
+.react-tag {
+  border-color: #00d8ff;
+  color: #00d8ff;
+  background-color: rgba(0, 216, 255, 0.2);
+}
+
+.server-tag {
+  border-color: #57ae48;
+  color: #57ae48;
+  background-color: rgba(87, 174, 72, 0.2);
+}
+
+.spring-boot-tag {
+  border-color: #60b831;
+  color: #60b831;
+  background-color: rgba(96, 184, 49, 0.2);
+}
+
+.java-tag {
+  border-color: #5382a2;
+  color: #5382a2;
+  background-color: rgba(83, 130, 162, 0.2);
+}
+
+.sql-tag {
+  border-color: #dc7433;
+  color: #dc7433;
+  background-color: rgba(220, 116, 51, 0.2);
+}
+
+.postgresql-tag {
+  border-color: #336791;
+  color: #336791;
+  background-color: rgba(51, 103, 145, 0.2);
+}
+
+.sql-server-tag {
+  border-color: #dc2b27;
+  color: #dc2b27;
+  background-color: rgba(220, 43, 39, 0.2);
+}
+
+.nodejs-tag {
+  border-color: #73aa63;
+  color: #73aa63;
+  background-color: rgba(115, 170, 99, 0.2);
+}
+
+.docker-tag {
+  border-color: #1d63ed;
+  color: #1d63ed;
+  background-color: rgba(29, 99, 237, 0.2);
+}
+
+.mongodb-tag {
+  border-color: #429933;
+  color: #429933;
+  background-color: rgba(66, 153, 51, 0.2);
+}
+
+.other-tag {
+  border-color: #cccccc;
+  color: #cccccc;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+.unity-tag {
+  border-color: #a6a6a6;
+  color: #a6a6a6;
+  background-color: rgba(166, 166, 166, 0.2);
+}
+
+.blender-tag {
+  border-color: #ea7600;
+  color: #ea7600;
+  background-color: rgba(234, 118, 0, 0.2);
+}
+
+.data-tag {
+  border-color: #ffe160;
+  color: #ffe160;
+  background-color: rgba(255, 225, 96, 0.2);
+}
+
+.python-tag {
+  border-color: #3c79a9;
+  color: #3c79a9;
+  background-color: rgba(60, 121, 169, 0.2);
+}
+
+.json-tag {
+  border-color: #a1a1a1;
+  color: #a1a1a1;
+  background-color: rgba(161, 161, 161, 0.2);
+}
+
+.xml-tag {
+  border-color: #feb543;
+  color: #feb543;
+  background-color: rgba(254, 181, 67, 0.2);
+}
+
+.tools-tag {
+  border-color: #6276e9;
+  color: #6276e9;
+  background-color: rgba(98, 118, 233, 0.2);
+}
+
+.lua-tag {
+  border-color: #000080;
+  color: #000080;
+  background-color: rgba(0, 0, 128, 0.2);
+}
+
+.visual-studio-tag {
+  border-color: #a577db;
+  color: #a577db;
+  background-color: rgba(165, 119, 219, 0.2);
+}
+
+.visual-studio-code-tag {
+  border-color: #3daaf2;
+  color: #3daaf2;
+  background-color: rgba(61, 170, 242, 0.2);
+}
+
+.intellij-idea-tag {
+  border-color: #e3396f;
+  color: #e3396f;
+  background-color: rgba(227, 57, 111, 0.2);
+}
+
+.android-studio-tag {
+  border-color: #92c755;
+  color: #92c755;
+  background-color: rgba(146, 199, 85, 0.2);
+}
+
+.github-tag {
+  border-color: #000000;
+  color: #7a7a7a;
+  background-color: rgba(41, 41, 41, 0.2);
+}
+
+.gitlab-tag {
+  border-color: #fc6d26;
+  color: #fc6d26;
+  background-color: rgba(252, 109, 38, 0.2);
+}
+
+.git-tag {
+  border-color: #f05033;
+  color: #f05033;
+  background-color: rgba(240, 80, 51, 0.2);
+}
+
+.svn-tag {
+  border-color: #809cc9;
+  color: #809cc9;
+  background-color: rgba(128, 156, 201, 0.2);
+}
+
+.jira-tag {
+  border-color: #2684ff;
+  color: #2684ff;
+  background-color: rgba(38, 132, 255, 0.2);
+}
+
+.design-tag {
+  border-color: #fe315d;
+  color: #fe315d;
+  background-color: rgba(254, 49, 93, 0.2);
+}
+
+.photoshop-tag {
+  border-color: #31a8ff;
+  color: #31a8ff;
+  background-color: rgba(49, 168, 255, 0.2);
+}
+
+.premiere-tag {
+  border-color: #9999ff;
+  color: #9999ff;
+  background-color: rgba(153, 153, 255, 0.2);
+}
+
+.after-effects-tag {
+  border-color: #9999ff;
+  color: #9999ff;
+  background-color: rgba(153, 153, 255, 0.2);
+}
+
+.vegas-tag {
+  border-color: #1195cf;
+  color: #1195cf;
+  background-color: rgba(17, 149, 207, 0.2);
+}
+
+.google-sheets-tag {
+  border-color: rgba(29, 166, 102);
+  color: rgba(29, 166, 102);
+  background-color: rgba(29, 166, 102, 0.2);
+}
+
+.wpf-tag {
+  border-color: rgba(10, 125, 180);
+  color: rgba(10, 125, 180);
+  background-color: rgba(10, 125, 180, 0.2);
+}
+
+.github-pages-tag {
+  border-color: rgba(67, 128, 180, 255);
+  color: rgba(67, 128, 180, 255);
+  background-color: rgba(67, 128, 180, 0.2);
+}
+
+@media screen and (min-width: 800px) {
+  .h4-tech-tag:hover {
+    background-color: #8baaff15;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .h4-tech-tag {
+    font-size: small;
+  }
+}

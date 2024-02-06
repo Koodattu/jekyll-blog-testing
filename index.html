@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ala-Ranta.la Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/styles/main-common.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/timeline.css" />
+    <link rel="stylesheet" href="/styles/tech-tags.css" />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/styles/projects-common.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="top-header">
+        <a class="name-link link-underline-animation link-underline-animation-rgb" href="/">
+          <h1 class="h1-name">_Ranta.la</h1>
+        </a>
+        <nav class="nav-top">
+          <a
+            class="link-underline-animation link-underline-animation-red nav-link"
+            href="/assets/Juha_Ala-Rantala_CV_FI.pdf"
+            >CV_FI</a
+          >
+          <a
+            class="link-underline-animation link-underline-animation-orange nav-link"
+            href="/assets/Juha_Ala-Rantala_CV_EN.pdf"
+            >CV_EN</a
+          >
+          <a class="link-underline-animation link-underline-animation-green nav-link" href="/about">About</a>
+          <a class="link-underline-animation link-underline-animation-cyan nav-link" href="/projects">Projects</a>
+          <a class="link-underline-animation link-underline-animation-blue nav-link" href="/blog">Blog</a>
+        </nav>
+      </header>
+      <main>
+        <div class="main-content">
+          <div class="info-container">
+            <h2 class="h2-info">👋 Hello there</h2>
+            <div class="info-content">
+              <img class="profile-picture" src="/assets/profile.webp" alt="Profile picture" />
+              <p>My name is Juha Ala-Rantala and I'm a Software Engineer based in Seinäjoki, Finland.</p>
+              <p>
+                I'm currently studying at Tampere University pursuing a
+                <a class="link-fill-animation" href="#education"> Master's degree </a>
+                in Information Technology, with a focus on web-based information systems. I am a
+                <a class="link-fill-animation" href="#education">Bachelor of Engineering</a>
+                graduate from Seinäjoki University of Applied Sciences, where I focused on software development and
+                received the max grade (five) for my
+                <a class="link-fill-animation" href="https://www.theseus.fi/handle/10024/168319" target="_blank"
+                  >thesis</a
+                >.
+              </p>
+              <p>
+                I have almost five years of experience working as a
+                <a class="link-fill-animation" href="#experience">Software Engineer</a>, designing user interfaces,
+                developing internal tools and maintaining existing products.
+              </p>
+              <p>
+                On my free time I like to hang out with friends, go to the gym, play games, create content, work on my
+                <a class="link-fill-animation" href="#projects">side projects</a>
+                and order kebab from
+                <a class="link-fill-animation" href="https://www.elcebo.fi/" target="_blank">El Cebo</a>.
+              </p>
+              <div class="contact-links">
+                <a class="contact-link" href="https://github.com/Koodattu" target="_blank"
+                  ><img class="contact-image" src="/assets/github.webp"
+                /></a>
+                <a class="contact-link" href="https://www.linkedin.com/in/juha-ala-rantala/" target="_blank"
+                  ><img class="contact-image" src="/assets/linkedin.webp"
+                /></a>
+                <a class="contact-link" href="mailto:alarantala.juha@gmail.com"
+                  ><img class="contact-image" src="/assets/gmail.png"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div id="skills" class="info-container">
+            <h2 class="h2-info">🛠️ Tech</h2>
+            <div class="skill-display-select">
+              <button id="skill-display-category" class="change-skill-display change-skill-display-enabled">
+                By Category
+              </button>
+              <button id="skill-display-matrix" class="change-skill-display">Skill Matrix</button>
+              <button id="skill-display-tiered" class="change-skill-display">Tier List</button>
+            </div>
+            <div id="skills-display" class="skills-locker-category">
+              <h4 id="languages-tag" class="h4-tech-tag">Languages</h4>
+              <h4 id="frontend-tag" class="h4-tech-tag">Frontend</h4>
+              <h4 id="backend-tag" class="h4-tech-tag">Backend</h4>
+              <h4 id="tools-tag" class="h4-tech-tag">Tools</h4>
+
+              <h4 id="novice-tag" class="h4-tech-tag">Novice</h4>
+              <h4 id="intermediate-tag" class="h4-tech-tag">Intermediate</h4>
+              <h4 id="proficient-tag" class="h4-tech-tag">Proficient</h4>
+              <h4 id="advanced-tag" class="h4-tech-tag">Advanced</h4>
+              <h4 id="expert-tag" class="h4-tech-tag">Expert</h4>
+
+              <a id="csharp-tag" href="/projects?tags=csharp" class="skill-image-container">
+                <img class="skill-image" src="/logos/c-sharp.webp" alt="C#" />
+                <div class="skill-image-text tech-tag csharp-tag">C#</div>
+              </a>
+              <a id="java-tag" href="/projects?tags=java" class="skill-image-container">
+                <img class="skill-image" src="/logos/java.webp" alt="Java" />
+                <div class="skill-image-text tech-tag java-tag">Java</div>
+              </a>
+              <a id="python-tag" href="/projects?tags=python" class="skill-image-container">
+                <img class="skill-image" src="/logos/python.webp" alt="Python" />
+                <div class="skill-image-text tech-tag python-tag">Python</div>
+              </a>
+              <a id="javascript-tag" href="/projects?tags=javasscript" class="skill-image-container">
+                <img class="skill-image" src="/logos/js.webp" alt="JavaScript" />
+                <div class="skill-image-text tech-tag javascript-tag">JavaScript</div>
+              </a>
+              <a id="dart-tag" href="/projects?tags=dart" class="skill-image-container">
+                <img class="skill-image" src="/logos/dart.webp" alt="Dart" />
+                <div class="skill-image-text tech-tag dart-tag">Dart</div>
+              </a>
+              <a id="cpp-tag" href="/projects?tags=cpp" class="skill-image-container">
+                <img class="skill-image" src="/logos/cpp.webp" alt="C++" />
+                <div class="skill-image-text tech-tag cpp-tag">C++</div>
+              </a>
+
+              <a id="dotnet-tag" href="/projects?tags=dotnet" class="skill-image-container">
+                <img class="skill-image" src="/logos/dotnet.webp" alt=".NET" />
+                <div class="skill-image-text tech-tag net-tag">.NET</div>
+              </a>
+              <a id="flutter-tag" href="/projects?tags=flutter" class="skill-image-container">
+                <img class="skill-image" src="/logos/flutter.webp" alt="Flutter" />
+                <div class="skill-image-text tech-tag flutter-tag">Flutter</div>
+              </a>
+              <a id="android-tag" href="/projects?tags=android" class="skill-image-container">
+                <img class="skill-image" src="/logos/android.webp" alt="Android" />
+                <div class="skill-image-text tech-tag android-tag">Android</div>
+              </a>
+              <a id="html-tag" href="/projects?tags=html5" class="skill-image-container">
+                <img class="skill-image" src="/logos/html5.webp" alt="HTML" />
+                <div class="skill-image-text tech-tag html-tag">HTML</div>
+              </a>
+              <a id="css-tag" href="/projects?tags=css3" class="skill-image-container">
+                <img class="skill-image" src="/logos/css3.webp" alt="CSS" />
+                <div class="skill-image-text tech-tag css-tag">CSS</div>
+              </a>
+              <a id="react-tag" href="/projects?tags=react" class="skill-image-container">
+                <img class="skill-image" src="/logos/react.webp" alt="React" />
+                <div class="skill-image-text tech-tag react-tag">React</div>
+              </a>
+
+              <a id="spring-tag" href="/projects?tags=spring-framework" class="skill-image-container">
+                <img class="skill-image" src="/logos/spring-framework.webp" alt="Spring Framework" />
+                <div class="skill-image-text tech-tag spring-boot-tag">Spring Framework</div>
+              </a>
+              <a id="nodejs-tag" href="/projects?tags=nodejs" class="skill-image-container">
+                <img class="skill-image" src="/logos/nodejs.webp" alt="NodeJS" />
+                <div class="skill-image-text tech-tag nodejs-tag">NodeJS</div>
+              </a>
+              <a id="sql-tag" href="/projects?tags=sql" class="skill-image-container">
+                <img class="skill-image" src="/logos/sql.webp" alt="SQL" />
+                <div class="skill-image-text tech-tag sql-tag">SQL</div>
+              </a>
+              <a id="sql-server-tag" href="/projects?tags=sql-server" class="skill-image-container">
+                <img class="skill-image" src="/logos/sql-server.webp" alt="Microsoft SQL Server" />
+                <div class="skill-image-text tech-tag sql-server-tag">Microsoft SQL Server</div>
+              </a>
+              <a id="postgresql-tag" href="/projects?tags=psql" class="skill-image-container">
+                <img class="skill-image" src="/logos/psql.webp" alt="PostgreSQL" />
+                <div class="skill-image-text tech-tag postgresql-tag">PostgreSQL</div>
+              </a>
+              <a id="mongodb-tag" href="/projects?tags=mongodb" class="skill-image-container">
+                <img class="skill-image" src="/logos/mongodb.webp" alt="MongoDB" />
+                <div class="skill-image-text tech-tag mongodb-tag">MongoDB</div>
+              </a>
+
+              <a id="vs-tag" href="/projects?tags=vs" class="skill-image-container">
+                <img class="skill-image" src="/logos/vs.webp" alt="Visual Studio" />
+                <div class="skill-image-text tech-tag visual-studio-tag">Visual Studio</div>
+              </a>
+              <a id="git-tag" href="/projects?tags=git" class="skill-image-container">
+                <img class="skill-image" src="/logos/git.webp" alt="Git" />
+                <div class="skill-image-text tech-tag git-tag">Git</div>
+              </a>
+              <a id="svn-tag" href="/projects?tags=svn" class="skill-image-container">
+                <img class="skill-image" src="/logos/svn.webp" alt="Subversion" />
+                <div class="skill-image-text tech-tag svn-tag">Subversion</div>
+              </a>
+              <a id="jira-tag" href="/projects?tags=jira" class="skill-image-container">
+                <img class="skill-image" src="/logos/jira.webp" alt="Jira" />
+                <div class="skill-image-text tech-tag jira-tag">Jira</div>
+              </a>
+              <a id="photoshop-tag" href="/projects?tags=adobe-ps" class="skill-image-container">
+                <img class="skill-image" src="/logos/adobe-ps.webp" alt="Adobe Photoshop" />
+                <div class="skill-image-text tech-tag photoshop-tag">Adobe Photoshop</div>
+              </a>
+              <a id="unity-tag" href="/projects?tags=unity" class="skill-image-container">
+                <img class="skill-image" src="/logos/unity.webp" alt="Unity" />
+                <div class="skill-image-text tech-tag unity-tag">Unity</div>
+              </a>
+            </div>
+          </div>
+          <div id="education" class="info-container">
+            <h2 class="h2-info">🎓 Education</h2>
+            <div class="box">
+              <ul>
+                <li class="hoverable">
+                  <a href="/education/tuni" class="hover-background"></a>
+                  <span></span>
+                  <div class="exp-info-logo">
+                    <div>
+                      <div class="title">Tampere University</div>
+                      <div class="name">Master of Science - Information Technology</div>
+                      <div class="length">Est. 2 years</div>
+                      <div class="info">
+                        <p>Focusing in designing and developing information-based web systems</p>
+                        <p>
+                          Studies include courses about large scale software development, software production process
+                          and project management
+                        </p>
+                        <p>The degree has been developed by researching the needs of the industry</p>
+                      </div>
+                      <div class="relevant-tags">
+                        <a href="/projects?tags=web" class="tech-tag web-tag">Web</a>
+                        <a href="/projects?tags=html" class="tech-tag html-tag">HTML</a>
+                        <a href="/projects?tags=css" class="tech-tag css-tag">CSS</a>
+                        <a href="/projects?tags=javascript" class="tech-tag javascript-tag">JavaScript</a>
+                        <a href="/projects?tags=mongodb" class="tech-tag mongodb-tag">MongoDB</a>
+                        <a href="/projects?tags=vs-code" class="tech-tag visual-studio-code-tag">Visual Studio Code</a>
+                        <a href="/projects?tags=git" class="tech-tag git-tag">Git</a>
+                      </div>
+                      <div class="relevant-links">
+                        <a href="https://www.tuni.fi/en" target="_blank">
+                          <img class="link-icon" src="./images/link.svg" />tuni.fi</a
+                        >
+                        <a href="https://www.ucs.fi/en" target="_blank">
+                          <img class="link-icon" src="./images/link.svg" />ucs.fi</a
+                        >
+                      </div>
+                      <div class="view-info">
+                        <div>View more info and details</div>
+                        <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+                      </div>
+                    </div>
+                    <img class="small-org-img tuni-org-img" src="/assets/tuni.webp" alt="Tampere University logo" />
+                  </div>
+                  <div class="time">
+                    <span>Present</span>
+                    <span>Aug 2023</span>
+                  </div>
+                </li>
+                <li class="hoverable">
+                  <a href="/education/seamk" class="hover-background"></a>
+                  <span></span>
+                  <div class="exp-info-logo">
+                    <div>
+                      <div class="title">Seinäjoki University of Applied Sciences</div>
+                      <div class="name">Bachelor of Engineering - Information Technology</div>
+                      <div class="length">3 years 8 months</div>
+                      <div class="info">
+                        <p>
+                          Oriented in programming and software development using several different languages and
+                          frameworks
+                        </p>
+                        <p>
+                          During my studies I developed several mobile applications for myself and my fellow students,
+                          including a timetable app, a student restaurant app, a student cafe app and a study registry
+                          app
+                        </p>
+                        <p>
+                          I graduated with a weighted gpa of 4.24 and I received the max grade 5 for my thesis (both on
+                          the scale of 0-5)
+                        </p>
+                      </div>
+                      <div class="relevant-tags">
+                        <a href="/projects?tags=desktop" class="tech-tag desktop-tag">Desktop</a>
+                        <a href="/projects?tags=csharp" class="tech-tag csharp-tag">C#</a>
+                        <a href="/projects?tags=net-framework" class="tech-tag net-framework-tag">.NET Framework</a>
+                        <a href="/projects?tags=python" class="tech-tag python-tag">Python</a>
+                        <a href="/projects?tags=vs" class="tech-tag visual-studio-tag">Visual Studio</a>
+                        <a href="/projects?tags=git" class="tech-tag git-tag">Git</a>
+                      </div>
+                      <div class="relevant-links">
+                        <a href="https://www.seamk.fi/en" target="_blank">
+                          <img class="link-icon" src="./images/link.svg" />seamk.fi</a
+                        >
+                        <a href="https://www.theseus.fi/handle/10024/168319" target="_blank">
+                          <img class="link-icon" src="./images/link.svg" />theseus.fi</a
+                        >
+                      </div>
+                      <div class="view-info">
+                        <div>View more info and details</div>
+                        <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+                      </div>
+                    </div>
+                    <img class="small-org-img" src="/assets/seamk.webp" alt="SeAMK logo" />
+                  </div>
+                  <div class="time">
+                    <span>May 2019</span>
+                    <span>Sep 2015</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="experience" class="info-container">
+            <h2 class="h2-info">💼 Experience</h2>
+            <div class="box">
+              <ul>
+                <li class="hoverable">
+                  <a href="/experience/prima-power" class="hover-background"></a>
+                  <span></span>
+                  <div class="exp-info-logo">
+                    <div>
+                      <div class="title">Prima Power / Finn-Power Oy</div>
+                      <div class="name">Software Designer</div>
+                      <div class="length">4 years 8 months</div>
+                      <div class="info">
+                        <p>
+                          Specialized in Windows desktop application development using C#, .NET Framework, WinForms, and
+                          WPF with focus on internal tools and human-machine interfaces.
+                        </p>
+                        <p>
+                          Designed multiple internal tools which increased productivity by improving testing processes
+                          and enhancing problem solving
+                        </p>
+                        <p>
+                          Developed a new feature for machine and application parametrization program to speed up the
+                          machine installation and startup process at customers
+                        </p>
+                        <p>
+                          Further developed and maintained the company's main software product, a machine user interface
+                          for controlling machine operations, which is used by almost every customer
+                        </p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <div class="relevant-tags">
+                        <a href="/projects?tags=desktop" class="tech-tag desktop-tag">Desktop</a>
+                        <a href="/projects?tags=csharp" class="tech-tag csharp-tag">C#</a>
+                        <a href="/projects?tags=net-framework" class="tech-tag net-framework-tag">.NET Framework</a>
+                        <a href="/projects?tags=win-services" class="tech-tag win-services-tag">Windows Services</a>
+                        <a href="/projects?tags=sql" class="tech-tag sql-tag">SQL</a>
+                        <a href="/projects?tags=vs" class="tech-tag visual-studio-tag">Visual Studio</a>
+                        <a href="/projects?tags=jira" class="tech-tag jira-tag">Jira</a>
+                        <a href="/projects?tags=svn" class="tech-tag svn-tag">Subversion</a>
+                      </div>
+                      <div class="relevant-links">
+                        <a href="https://www.primapower.com/en" target="_blank">
+                          <img class="link-icon" src="./images/link.svg" />primapower.com</a
+                        >
+                      </div>
+                      <div class="view-info">
+                        <div>View more info and details</div>
+                        <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+                      </div>
+                    </div>
+                    <img class="small-org-img" src="/assets/prima-power.webp" alt="Prima Power logo" />
+                  </div>
+                  <div class="time">
+                    <span>Nov 2022</span>
+                    <span>Apr 2018</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="projects" class="info-container">
+            <div class="content-title">
+              <h2 class="h2-info" id="projects-header">🚀 Projects</h2>
+              <a href="/projects" class="view-info view-all-projects hoverable">
+                <div>View the rest of my projects</div>
+                <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+              </a>
+            </div>
+            <div id="filtered-projects" class="filtered-projects"></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <span class="flex-center">
+            Made with ☕️ and 🍪. All trademarks, logos and brand names are the property of their respective owners.
+            View source code on
+            <a class="contact-link" href="https://github.com/Koodattu" target="_blank"
+              ><img class="contact-image" src="/assets/github.webp"
+            /></a>
+          </span>
+        </div>
+      </footer>
+    </div>
+    <template id="project-template">
+      <a target="_blank" class="project-container hoverable">
+        <div class="project-content">
+          <img id="project-image" class="project-preview-image" />
+          <div class="project-information">
+            <h3 id="project-title"></h3>
+            <p id="project-year" style="color: gray"></p>
+            <p id="project-description" style="font-weight: bold"></p>
+            <p id="project-tags"></p>
+            <p>Features:</p>
+            <ul id="project-features" class="project-features"></ul>
+            <div class="view-info view-project-details">
+              <div>View more info and details</div>
+              <img class="arrow-out" src="/assets/right-arrow.webp" alt="Arrow" />
+            </div>
+            <template id="tag-template">
+              <span class="tech-tag"></span>
+            </template>
+          </div>
+        </div>
+      </a>
+    </template>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
