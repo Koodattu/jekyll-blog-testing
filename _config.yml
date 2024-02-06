@@ -5,5 +5,5 @@ url: https://koodattu.github.io
 baseurl: /jekyll-blog-testing
 
 exclude:
-  - jbt
   - jbt/
+  - styles/
